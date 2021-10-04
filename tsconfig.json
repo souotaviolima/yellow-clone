@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "@modules/*": ["./node_modules/*"],
+      "@public/*": ["./public/*"],
+      "@src/*": ["./src/*"],
+      "@account/*": ["./src/pages/account/*"],
+      "@api/*": ["./src/pages/api/*"],
+      "@app/*": ["./src/pages/app/*"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/utils/maks.js"],
+  "exclude": ["node_modules"]
+}
