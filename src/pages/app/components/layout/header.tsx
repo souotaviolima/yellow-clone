@@ -1,20 +1,37 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
+import Sticky from 'react-stickynode'
+
 import { GridThreeUp } from '@styled-icons/open-iconic'
-import { Cart } from '@styled-icons/boxicons-regular'
+import { Cart, Search } from '@styled-icons/boxicons-regular'
+
+import DropDownItem from './dropdownItem'
 
 const Header = () => {
+  const [headerFixed, setHeaderFixed] = useState(false)
+  const handleStateChange = (status: any) => {
+    setHeaderFixed(status.status === Sticky.STATUS_FIXED ? true : false)
+  }
+
   return (
     <React.Fragment>
-      <header className="header">
+      <Sticky onStateChange={handleStateChange} />
+      <header
+        className="header transition-s-1"
+        style={
+          headerFixed
+            ? { position: 'fixed', top: '0', zIndex: 9999, width: '100%' }
+            : {}
+        }
+      >
         <div
           className="border-b-solid border-s-1 border-c-2"
-          style={{ backgroundColor: 'var(--color-white)' }}
+          style={{ position: 'relative', zIndex: 9999, backgroundColor: 'var(--color-white)' }}
         >
-          <div className="container-xxl between-display">
+          <div className="container-xxl between-display pd-r-3 pd-l-3">
             <div className="content flex-display">
               <div className="logo-header">
                 <img
-                  src="https://yt3.ggpht.com/ytc/AKedOLSa-GfeS8w8Xx4ebvV3Rvwu6bsNCweB7FTGu2_lDg"
+                  src="/assets/img/unnamed.jpg"
                   alt="Picture of the author"
                   width="40px"
                 />
@@ -43,11 +60,8 @@ const Header = () => {
             <div className="content flex-display">
               <nav>
                 <ul className="content-row">
-                  <li className="btn-s-2 pd-0 flex-display mg-1">
-                    <Cart
-                      fill="#000000"
-                      size="30px"
-                    />
+                  <li className={ headerFixed ? "btn-s-2 pd-0 flex-display mg-1 animations-show-in" : "btn-s-2 pd-0 flex-display mg-1 animations-hidden-out"}>
+                    <Search fill="#000000" size="30px" />
                   </li>
                   <li
                     className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1 hidden-1"
@@ -95,7 +109,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white border-c-2">
+        <div
+          className="bg-white border-c-2 transition-s-8"
+          style={headerFixed ? HeaderAnimation : { top: 0 }}
+        >
           <div className="container-xxl">
             <form className="form flex-display  between-display">
               <div className="form-content mg-t-5" style={{ width: '100%' }}>
@@ -129,6 +146,10 @@ const Header = () => {
             <div className="container-xxl between-display">
               <nav className="hidden-1">
                 <ul className="content-row pd-b-4 pd-t-4">
+
+<DropDownItem/>
+
+
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
                     style={{
@@ -193,4 +214,9 @@ const Header = () => {
   )
 }
 
+const HeaderAnimation: any = {
+  zIndex: 9998,
+  position: 'relative',
+  top: -900
+}
 export default Header
