@@ -8,7 +8,7 @@ export default function Index() {
     <Wrap>
       <div className="container-xxl mg-t-5 mg-b-5">
         <div className="content">
-          <div className="column-lg">
+          <div className="column-3">
             <div
               className="card-primary card-light mg-4 mg-t-1"
               style={{ backgroundColor: 'var(--color-gray)', borderRadius: 23 }}
@@ -44,7 +44,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="column-sm grid-display-1">
+          <div className="column-2">
             <div
               className="card-primary card-light mg-4 mg-t-1"
               style={{ backgroundColor: 'var(--color-gray)', borderRadius: 23 }}

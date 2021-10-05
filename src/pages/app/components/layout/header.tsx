@@ -21,7 +21,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="content flex-display">
+            <div className="content flex-display hidden-1">
               <nav>
                 <ul className="content-row">
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
@@ -50,7 +50,7 @@ const Header = () => {
                     />
                   </li>
                   <li
-                    className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1"
+                    className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1 hidden-1"
                     style={{
                       borderRadius: 50,
                       backgroundColor: '#FFFB1F'
@@ -110,7 +110,7 @@ const Header = () => {
                   }}
                 />
               </div>
-              <div className="form-content mg-t-5 mg-l-4">
+              <div className="form-content hidden-1 mg-t-5 mg-l-4">
                 <button
                   type="submit"
                   className="btn btn-primary pd-l-5 pd-r-5"
@@ -127,7 +127,7 @@ const Header = () => {
           </div>
           <div className="bg-white border-b-solid border-s-1 border-c-2 pd-t-5 pd-b-5">
             <div className="container-xxl between-display">
-              <nav>
+              <nav className="hidden-1">
                 <ul className="content-row pd-b-4 pd-t-4">
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
@@ -141,7 +141,7 @@ const Header = () => {
                   </li>
                 </ul>
               </nav>
-              <nav>
+              <nav className="hidden-1">
                 <ul className="content-row">
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
