@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { ArrowRightShort } from '@styled-icons/bootstrap'
+import { ArrowForwardOutline } from '@styled-icons/evaicons-outline'
 
 export default function Index() {
   return (
@@ -638,6 +638,29 @@ export default function Index() {
             </div>
           </li>
         </ul>
+      </div>
+      <div style={{ clear: 'both' }} />
+
+      <div
+        className="footer-content"
+        style={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          alignItems: 'center'
+        }}
+      >
+        <button
+          type="submit"
+          className="btn btn-primary pd-l-5 pd-r-5"
+          style={{
+            display: 'table',
+            minWidth: 'auto',
+            backgroundColor: 'var(--color-black)',
+            borderRadius: 30
+          }}
+        >
+          Explore all <ArrowForwardOutline fill="#ffffff" size="25px" />
+        </button>
       </div>
     </div>
   )

@@ -25,11 +25,22 @@ const Header = () => {
       >
         <div
           className="border-b-solid border-s-1 border-c-2"
-          style={{
-            position: 'relative',
-            zIndex: 9999,
-            backgroundColor: 'var(--color-white)'
-          }}
+          style={
+            headerFixed
+              ? {
+                  position: 'relative',
+                  zIndex: 9999,
+                  backgroundColor: 'var(--color-white)',
+                  boxShadow: '0px 0px 7px 0px #cccccc78',
+                  transition: '0.2s ease-in'
+                }
+              : {
+                  position: 'relative',
+                  zIndex: 9999,
+                  backgroundColor: 'var(--color-white)',
+                  transition: '0.2s ease-in'
+                }
+          }
         >
           <div className="container-xxl between-display pd-r-3 pd-l-3">
             <div className="content flex-display">
@@ -227,4 +238,5 @@ const HeaderAnimation: any = {
   position: 'relative',
   top: -900
 }
+
 export default Header

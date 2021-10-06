@@ -20,6 +20,7 @@ h2 {
   border-radius: 15px;
   padding: 5px;
   float: left;
+  cursor: pointer;
   -webkit-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -33,6 +34,12 @@ h2 {
 }
 
 /* Reponsive custom */
+
+@media only screen and (min-width: 360px) {
+  .card-product-item-li {
+    width: 50%;
+  }
+}
 
 @media only screen and (min-width: 480px) {
   .card-product-item-li {
