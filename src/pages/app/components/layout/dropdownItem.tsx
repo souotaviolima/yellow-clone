@@ -17,46 +17,47 @@ const DropdownItem = ({ title, row }: any) => {
         >
           Join Now
           <ArrowIosDownwardOutline
-            className="mg-l-2"
+            className={down ? 'animations-rotation-all mg-l-2' : 'mg-l-2'}
             fill="#000000"
             size="18px"
           />
         </li>
 
         <ul
-          className={
-            down
-              ? 'content-dropdown animations-dropdown-scale-content'
-              : 'content-dropdown'
-          }
+          style={down ? { display: 'block' } : { display: 'none' }}
         >
-          <li
-            className={
-              down
-                ? 'item-dropdown animations-dropdown-scale-item pd-b-3 pd-t-5 pd-7'
-                : 'item-dropdown pd-b-3 pd-t-5 pd-7'
-            }
+          <div
+            style={{ position: 'relative' }}
+            className={down ? 'content-dropdown animations-scale-down' : 'content-dropdown'}
           >
-            Object mockup
-          </li>
-          <li
-            className={
-              down
-                ? 'item-dropdown animations-dropdown-scale-item pd-b-3 pd-t-5 pd-7'
-                : 'item-dropdown pd-b-3 pd-t-5 pd-7'
-            }
-          >
-            Creative Store
-          </li>
-          <li
-            className={
-              down
-                ? 'item-dropdown animations-dropdown-scale-item pd-b-4 pd-t-5 pd-7'
-                : 'item-dropdown pd-b-4 pd-t-5 pd-7'
-            }
-          >
-            PNG Images
-          </li>
+            <li
+              className={
+                down
+                  ? 'item-dropdown animations-dropdown-scale-item pd-b-3 pd-t-5 pd-7'
+                  : 'item-dropdown pd-b-3 pd-t-5 pd-7'
+              }
+            >
+              Object mockup
+            </li>
+            <li
+              className={
+                down
+                  ? 'item-dropdown animations-dropdown-scale-item pd-b-3 pd-t-5 pd-7'
+                  : 'item-dropdown pd-b-3 pd-t-5 pd-7'
+              }
+            >
+              Creative Store
+            </li>
+            <li
+              className={
+                down
+                  ? 'item-dropdown animations-dropdown-scale-item pd-b-4 pd-t-5 pd-7'
+                  : 'item-dropdown pd-b-4 pd-t-5 pd-7'
+              }
+            >
+              PNG Images
+            </li>
+          </div>
         </ul>
       </div>
     </nav>
