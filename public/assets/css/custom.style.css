@@ -34,7 +34,23 @@ h2 {
 .dropdown-menu-horizontal .item-dropdown {
 }
 
-/* Custom CSS */
+/* Footer */
+.footer {
+}
+.footer .footer-container {
+}
+.footer .footer-nav {
+}
+.footer .footer-nav .footer-menu-item {
+}
+.footer .footer-nav .footer-menu-item b {
+}
+.footer .footer-nav .footer-menu-item a {
+  font-weight: 300;
+  font-size: .8rem;
+  color: #000000;
+}
+/* Card product */
 .card-product-item-li {
   border-radius: 15px;
   padding: 5px;
