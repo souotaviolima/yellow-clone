@@ -7,21 +7,21 @@ const DropdownItem = ({ title, row }: any) => {
   return (
     <nav>
       <div className="dropdown-menu-horizontal">
-        <span
+        <li
           onClick={() => setDown(!down)}
-          className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1"
+          className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
           style={{
             borderRadius: 50,
             border: '1px solid #ddd'
           }}
         >
-          Join Now{' '}
+          Join Now
           <ArrowIosDownwardOutline
             className="mg-l-2"
             fill="#000000"
-            size="20px"
+            size="18px"
           />
-        </span>
+        </li>
 
         <ul
           className={
@@ -33,8 +33,8 @@ const DropdownItem = ({ title, row }: any) => {
           <li
             className={
               down
-                ? 'item-dropdown animations-dropdown-scale-item pd-b-5 pd-t-5 pd-7'
-                : 'item-dropdown pd-b-5 pd-t-5 pd-7'
+                ? 'item-dropdown animations-dropdown-scale-item pd-b-3 pd-t-5 pd-7'
+                : 'item-dropdown pd-b-3 pd-t-5 pd-7'
             }
           >
             Object mockup
@@ -42,8 +42,8 @@ const DropdownItem = ({ title, row }: any) => {
           <li
             className={
               down
-                ? 'item-dropdown animations-dropdown-scale-item pd-b-5 pd-t-5 pd-7'
-                : 'item-dropdown pd-b-5 pd-t-5 pd-7'
+                ? 'item-dropdown animations-dropdown-scale-item pd-b-3 pd-t-5 pd-7'
+                : 'item-dropdown pd-b-3 pd-t-5 pd-7'
             }
           >
             Creative Store
@@ -51,8 +51,8 @@ const DropdownItem = ({ title, row }: any) => {
           <li
             className={
               down
-                ? 'item-dropdown animations-dropdown-scale-item pd-b-5 pd-t-5 pd-7'
-                : 'item-dropdown pd-b-5 pd-t-5 pd-7'
+                ? 'item-dropdown animations-dropdown-scale-item pd-b-4 pd-t-5 pd-7'
+                : 'item-dropdown pd-b-4 pd-t-5 pd-7'
             }
           >
             PNG Images

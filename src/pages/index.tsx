@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Wrap from './app/components/layout/wrap'
+import Products from './app/components/widgets/products'
 
 import { ArrowRightShort } from '@styled-icons/bootstrap'
 
@@ -438,7 +439,8 @@ export default function Index() {
           </div>
         </div>
         <div style={{ clear: 'both' }} />
-
+        <Products />
+        <div style={{ clear: 'both' }} />
         <div className="content mg-t-7">
           <div className="column-6">
             <div

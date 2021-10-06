@@ -25,7 +25,11 @@ const Header = () => {
       >
         <div
           className="border-b-solid border-s-1 border-c-2"
-          style={{ position: 'relative', zIndex: 9999, backgroundColor: 'var(--color-white)' }}
+          style={{
+            position: 'relative',
+            zIndex: 9999,
+            backgroundColor: 'var(--color-white)'
+          }}
         >
           <div className="container-xxl between-display pd-r-3 pd-l-3">
             <div className="content flex-display">
@@ -60,7 +64,13 @@ const Header = () => {
             <div className="content flex-display">
               <nav>
                 <ul className="content-row">
-                  <li className={ headerFixed ? "btn-s-2 pd-0 flex-display mg-1 animations-show-in" : "btn-s-2 pd-0 flex-display mg-1 animations-hidden-out"}>
+                  <li
+                    className={
+                      headerFixed
+                        ? 'btn-s-2 pd-0 flex-display mg-1 animations-show-in'
+                        : 'btn-s-2 pd-0 flex-display mg-1 animations-hidden-out'
+                    }
+                  >
                     <Search fill="#000000" size="30px" />
                   </li>
                   <li
@@ -146,9 +156,7 @@ const Header = () => {
             <div className="container-xxl between-display">
               <nav className="hidden-1">
                 <ul className="content-row pd-b-4 pd-t-4">
-
-<DropDownItem/>
-
+                  <DropDownItem />
 
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
