@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <div className="column-6 col-12">
           <div className="content">
-            <nav className="hidden-1 footer-nav">
+            <nav className="footer-nav">
               <ul>
                 <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
                   <b>Legal</b>
