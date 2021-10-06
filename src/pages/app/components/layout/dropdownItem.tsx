@@ -5,7 +5,7 @@ const DropdownItem = ({ title, row }: any) => {
   const [down, setDown] = useState(false)
 
   return (
-    <nav>
+    <nav className="nav-dropdown-menu-horizontal">
       <div className="dropdown-menu-horizontal">
         <li
           onClick={() => setDown(!down)}
@@ -15,14 +15,13 @@ const DropdownItem = ({ title, row }: any) => {
             border: '1px solid #ddd'
           }}
         >
-          Join Now
+          Object mockups
           <ArrowIosDownwardOutline
             className={down ? 'animations-rotation-all mg-l-2' : 'mg-l-2'}
             fill="#000000"
             size="18px"
           />
         </li>
-
         <ul
           style={down ? { display: 'block' } : { display: 'none' }}
         >
