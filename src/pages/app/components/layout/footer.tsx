@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer" style={{ backgroundColor: 'var(--color-gray)' }}>
       <div className="footer-container container-xxl mg-t-5 mg-b-5 pd-t-5 pd-b-5">
         <div className="column-6 col-12">
-          <div className="content">a</div>
+          <div className="content">Social</div>
         </div>
         <div className="column-6 col-12">
           <div className="content">
