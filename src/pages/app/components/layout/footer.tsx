@@ -124,11 +124,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="" style={{ borderTop: '1px solid #dddddd' }}>
+      <div style={{ clear: 'both' }} />
+
+      <div
+        className="footer-copyright"
+        style={{ borderTop: '1px solid #dddddd' }}
+      >
         <div className="footer-container container-xxl pd-t-5 pd-b-5">
           <div className="column-6 col-12">
-            <div className="content">
-              {' '}
+            <div className="content footer-logo">
               <div className="logo-header">
                 <img
                   src="/assets/img/unnamed.jpg"
@@ -139,10 +143,15 @@ const Footer = () => {
             </div>
           </div>
           <div className="column-6 col-12">
-            <div className="content">
-              Make your idea matter! Trademarks and brands are the property of
-              their respective owners. © 2015–2021 Yellow Images Inc. Vancouver,
-              BC, Canada.
+            <div className="content footer-copyright-text responsive-align">
+              <small>
+                <b style={{ color: '#000', fontWeight: 900 }}>
+                  Make your idea matter!
+                </b>{' '}
+                Trademarks and brands are the property of their respective
+                owners.
+                <br />© 2015–2021 Yellow Images Inc. Vancouver, BC, Canada.
+              </small>
             </div>
           </div>
         </div>

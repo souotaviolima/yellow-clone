@@ -40,8 +40,16 @@ h2 {
 
 /* Footer */
 .footer {
+  overflow: hidden;
 }
 .footer .footer-container {
+}
+
+.footer .footer-copyright-text small {
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 0.7rem;
+  color: #7c7c7c;
 }
 .footer .footer-nav {
 }
@@ -79,6 +87,17 @@ h2 {
 
 /* Reponsive custom */
 
+/* Max */
+
+@media only screen and (max-width: 768px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Min */
 @media only screen and (min-width: 360px) {
   .card-product-item-li {
     width: 50%;
