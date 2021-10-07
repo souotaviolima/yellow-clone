@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  height: 100%;
+}
+
 h1,
 h2,
 h2 {
@@ -41,13 +45,18 @@ h2 {
 }
 .footer .footer-nav {
 }
+
+.footer .footer-nav-col {
+  float: left;
+}
+
 .footer .footer-nav .footer-menu-item {
 }
 .footer .footer-nav .footer-menu-item b {
 }
 .footer .footer-nav .footer-menu-item a {
   font-weight: 300;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #000000;
 }
 /* Card product */
@@ -91,15 +100,24 @@ h2 {
   .card-product-item-li {
     width: 25%;
   }
+  .footer .footer-nav-col {
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .card-product-item-li {
     width: 16.66%;
   }
+  .footer .footer-nav-col {
+    width: 33%;
+  }
 }
 @media only screen and (min-width: 1680px) {
   .card-product-item-li {
     width: 16.66%;
+  }
+  .footer .footer-nav-col {
+    width: 33%;
   }
 }
 
