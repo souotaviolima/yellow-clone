@@ -13,7 +13,10 @@ import { Vk } from '@styled-icons/icomoon'
 
 const Footer = () => {
   return (
-    <footer className="footer" style={{ backgroundColor: 'var(--theme-secundary-color)' }}>
+    <footer
+      className="footer"
+      style={{ backgroundColor: 'var(--theme-grey-background)' }}
+    >
       <div className="footer-container container-xxl mg-t-5 mg-b-5 pd-t-5 pd-b-5">
         <div className="column-6 col-12">
           <div className="content">
@@ -163,29 +166,28 @@ const Footer = () => {
       <div style={{ clear: 'both' }} />
       <div
         className="footer-copyright"
-        style={{ borderTop: '1px solid #dddddd', backgroundColor: 'var(--theme-light-background)' }}
+        style={{
+          borderTop: '1px solid #dddddd',
+          backgroundColor: 'var(--theme-grey-background)'
+        }}
       >
         <div className="footer-container container-xxl pd-t-5 pd-b-5">
           <div className="column-6 col-12">
-            <div className="content footer-logo">
-              <div className="logo-header">
-                <img
-                  src="/assets/img/amo-logo-sm.jpg"
-                  alt="Picture of the author"
-                  height="40px"
-                />
-              </div>
+            <div className="content footer-copyright-text responsive-align">
+              <small>
+                <b style={{ color: '#000', fontWeight: 900, marginRight: 5 }}>
+                  24.891.593/0001-91
+                </b>
+                | AMO NEGOCIOS E SERVIÇO EIRELI | TODOS OS DIREITOS RESERVADOS
+              </small>
             </div>
           </div>
           <div className="column-6 col-12">
             <div className="content footer-copyright-text responsive-align">
               <small>
-                <b style={{ color: '#000', fontWeight: 900 }}>
-                  Make your idea matter!
-                </b>{' '}
-                Trademarks and brands are the property of their respective
-                owners.
-                <br />© 2015–2021 Yellow Images Inc. Vancouver, BC, Canada.
+                <b style={{ color: '#606060', fontWeight: 900 }}>
+                  Agende sua avaliação grátis
+                </b>
               </small>
             </div>
           </div>
