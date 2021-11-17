@@ -161,6 +161,8 @@ export default function Index() {
           ))}
         </ul>
       </div>
+      <div style={{ clear: 'both' }} />
+
     </div>
   )
 }

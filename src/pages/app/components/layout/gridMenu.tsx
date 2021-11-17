@@ -34,7 +34,7 @@ const GridMenu = () => {
                   Conheça os procedimentos oferecido pela a clínica
                 </h2>
               </div>
-              <div className="hidden-1">
+              <div>
                 <img
                   src="/assets/img/modelo_w_01.png"
                   style={{ height: 365, bottom: -40, position: 'relative' }}

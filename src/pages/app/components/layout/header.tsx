@@ -52,7 +52,6 @@ const Header = () => {
                 />
               </div>
             </div>
-
             <div className="content flex-display hidden-1">
               <nav>
                 <ul className="content-row">
@@ -75,11 +74,11 @@ const Header = () => {
               </nav>
             </div>
 
-            <div className="content flex-display">
+            <div className="content flex-display hidden-1">
               <nav>
                 <ul className="content-row">
                   <li
-                    className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1 hidden-1"
+                    className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1"
                     style={{
                       borderRadius: 50,
                       backgroundColor: 'var(--theme-primary-color)'
@@ -131,7 +130,7 @@ const Header = () => {
               </div>
             </form>
           </div>
-          <div className="ctx-header border-b-solid border-s-1 border-c-2 pd-t-1 pd-b-1">
+          <div className="ctx-header border-b-solid border-s-1 border-c-2 pd-t-1 pd-b-1 hidden-1">
             <div className="container-xxl">
               <nav className="hidden-1">
                 <ul className="content-row">

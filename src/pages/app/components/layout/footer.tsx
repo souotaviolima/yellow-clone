@@ -20,120 +20,6 @@ const Footer = () => {
       <div className="footer-container container-xxl mg-t-5 mg-b-5 pd-t-5 pd-b-5">
         <div className="column-6 col-12">
           <div className="content">
-            <nav className="footer-nav">
-              <div className="footer-nav-col">
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Legal</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Markets</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-              </div>
-              <div className="footer-nav-col">
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Legal</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Markets</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-              </div>
-              <div className="footer-nav-col">
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Legal</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Markets</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div className="column-6 col-12">
-          <div className="content">
             {' '}
             <nav>
               <ul className="content-row pd-b-4 pd-t-4">
@@ -159,6 +45,120 @@ const Footer = () => {
                   <Vk fill="#000000" size="22px" />
                 </li>
               </ul>
+            </nav>
+          </div>
+        </div>
+        <div className="column-6 col-12">
+          <div className="content">
+            <nav className="footer-nav">
+              <div className="footer-nav-col">
+                <ul>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <b>Institucional</b>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Privacy Policy</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Licenses</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Copyright Notice & Disclaimer</a>
+                  </div>
+                </ul>
+                <ul>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <b>Markets</b>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Privacy Policy</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Licenses</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Copyright Notice & Disclaimer</a>
+                  </div>
+                </ul>
+              </div>
+              <div className="footer-nav-col">
+                <ul>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <b>Tratamentos</b>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Privacy Policy</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Licenses</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Copyright Notice & Disclaimer</a>
+                  </div>
+                </ul>
+                <ul>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <b>Markets</b>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Privacy Policy</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Licenses</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Copyright Notice & Disclaimer</a>
+                  </div>
+                </ul>
+              </div>
+              <div className="footer-nav-col">
+                <ul>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <b>Contatos</b>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Privacy Policy</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Licenses</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Copyright Notice & Disclaimer</a>
+                  </div>
+                </ul>
+                <ul>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <b>Markets</b>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Privacy Policy</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Licenses</a>
+                  </div>
+                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
+                    <a href="#">Copyright Notice & Disclaimer</a>
+                  </div>
+                </ul>
+              </div>
             </nav>
           </div>
         </div>
