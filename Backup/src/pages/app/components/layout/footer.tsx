@@ -13,8 +13,38 @@ import { Vk } from '@styled-icons/icomoon'
 
 const Footer = () => {
   return (
-    <footer className="footer" style={{ backgroundColor: 'var(--theme-secundary-color)' }}>
+    <footer className="footer" style={{ backgroundColor: 'var(--color-gray)' }}>
       <div className="footer-container container-xxl mg-t-5 mg-b-5 pd-t-5 pd-b-5">
+        <div className="column-6 col-12">
+          <div className="content">
+            {' '}
+            <nav>
+              <ul className="content-row pd-b-4 pd-t-4">
+                <li className="btn-s-2 pd-r-5">
+                  <FacebookSquare fill="#000000" size="22px" />
+                </li>
+                <li className="btn-s-2 pd-r-5">
+                  <Youtube fill="#000000" size="22px" />
+                </li>
+                <li className="btn-s-2 pd-r-5">
+                  <Pinterest fill="#000000" size="22px" />
+                </li>
+                <li className="btn-s-2 pd-r-5">
+                  <Twitter fill="#000000" size="22px" />
+                </li>
+                <li className="btn-s-2 pd-r-5">
+                  <Instagram fill="#000000" size="22px" />
+                </li>
+                <li className="btn-s-2 pd-r-5">
+                  <Behance fill="#000000" size="22px" />
+                </li>
+                <li className="btn-s-2 pd-r-5">
+                  <Vk fill="#000000" size="22px" />
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         <div className="column-6 col-12">
           <div className="content">
             <nav className="footer-nav">
@@ -129,50 +159,21 @@ const Footer = () => {
             </nav>
           </div>
         </div>
-        <div className="column-6 col-12">
-          <div className="content">
-            {' '}
-            <nav>
-              <ul className="content-row pd-b-4 pd-t-4">
-                <li className="btn-s-2 pd-r-5">
-                  <FacebookSquare fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Youtube fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Pinterest fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Twitter fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Instagram fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Behance fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Vk fill="#000000" size="22px" />
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
       </div>
       <div style={{ clear: 'both' }} />
+
       <div
         className="footer-copyright"
-        style={{ borderTop: '1px solid #dddddd', backgroundColor: 'var(--theme-light-background)' }}
+        style={{ borderTop: '1px solid #dddddd' }}
       >
         <div className="footer-container container-xxl pd-t-5 pd-b-5">
           <div className="column-6 col-12">
             <div className="content footer-logo">
               <div className="logo-header">
                 <img
-                  src="/assets/img/amo-logo-sm.jpg"
+                  src="/assets/img/unnamed.jpg"
                   alt="Picture of the author"
-                  height="40px"
+                  width="40px"
                 />
               </div>
             </div>

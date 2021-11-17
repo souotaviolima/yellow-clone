@@ -42,13 +42,13 @@ const Header = () => {
                 }
           }
         >
-          <div className="container-xxl between-display pd-r-3 pd-l-3 pd-6">
+          <div className="container-xxl between-display pd-r-3 pd-l-3">
             <div className="content flex-display">
               <div className="logo-header">
                 <img
-                  src="/assets/img/amo-logo-sm.jpg"
+                  src="/assets/img/unnamed.jpg"
                   alt="Picture of the author"
-                  height="40px"
+                  width="40px"
                 />
               </div>
             </div>
@@ -57,19 +57,16 @@ const Header = () => {
               <nav>
                 <ul className="content-row">
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Início
+                    Home
                   </li>
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Procedimetos
+                    Criador
                   </li>
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    A clíníca
+                    Personalizar
                   </li>
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Promoções
-                  </li>
-                  <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Localização
+                    Ajustes
                   </li>
                 </ul>
               </nav>
@@ -79,15 +76,54 @@ const Header = () => {
               <nav>
                 <ul className="content-row">
                   <li
+                    className={
+                      headerFixed
+                        ? 'btn-s-2 pd-0 flex-display mg-1 animations-show-in'
+                        : 'btn-s-2 pd-0 flex-display mg-1 animations-hidden-out'
+                    }
+                  >
+                    <Search fill="#000000" size="30px" />
+                  </li>
+                  <li
                     className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1 hidden-1"
                     style={{
                       borderRadius: 50,
-                      backgroundColor: 'var(--theme-primary-color)'
+                      backgroundColor: '#FFFB1F'
                     }}
                   >
-                    <strong style={{ fontWeight: 900, color: '#ffffff' }}>
-                      Agendar avaliação grátis
-                    </strong>
+                    <strong style={{ fontWeight: 900 }}>Get 90% OFF</strong>
+                  </li>
+                  <li
+                    className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1"
+                    style={{
+                      borderRadius: 50,
+                      border: '1px solid #ddd'
+                    }}
+                  >
+                    {' '}
+                    Login
+                  </li>
+                  <li
+                    className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1"
+                    style={{
+                      borderRadius: 50,
+                      border: '1px solid #ddd'
+                    }}
+                  >
+                    {' '}
+                    Join Now
+                  </li>
+                  <li
+                    className="btn-s-2 pd-3 flex-display mg-1"
+                    style={{
+                      backgroundColor: '#FFFB1F',
+                      borderRadius: 10
+                    }}
+                  >
+                    <img
+                      src={'/assets/icons/menu_grid_circle_icon.svg'}
+                      height="25px"
+                    />
                   </li>
                 </ul>
               </nav>
@@ -99,10 +135,7 @@ const Header = () => {
           style={headerFixed ? HeaderAnimation : { top: 0 }}
         >
           <div className="container-xxl">
-            <form
-              className="form flex-display  between-display"
-              style={{ display: 'none' }}
-            >
+            <form className="form flex-display  between-display">
               <div className="form-content mg-t-5" style={{ width: '100%' }}>
                 <input
                   type="text"
@@ -122,8 +155,7 @@ const Header = () => {
                   style={{
                     backgroundColor: 'var(--color-black)',
                     borderRadius: 30,
-                    minWidth: '12rem',
-                    background: '#ffffff'
+                    minWidth: '12rem'
                   }}
                 >
                   Search now
@@ -131,34 +163,65 @@ const Header = () => {
               </div>
             </form>
           </div>
-          <div className="ctx-header border-b-solid border-s-1 border-c-2 pd-t-1 pd-b-1">
-            <div className="container-xxl">
+          <div className="bg-white border-b-solid border-s-1 border-c-2 pd-t-5 pd-b-5">
+            <div className="container-xxl between-display">
+              <nav className="hidden-1">
+                <ul className="content-row pd-b-4 pd-t-4">
+                  <DropDownItem />
+
+                  <li
+                    className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
+                    style={{
+                      borderRadius: 50,
+                      border: '1px solid #ddd'
+                    }}
+                  >
+                    {' '}
+                    Home
+                  </li>
+                </ul>
+              </nav>
               <nav className="hidden-1">
                 <ul className="content-row">
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
                     style={{
-                      borderRadius: 50
+                      borderRadius: 50,
+                      border: '1px solid #ddd'
                     }}
                   >
-                    (84) 9.9619.1917
+                    Home
                   </li>
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
                     style={{
-                      borderRadius: 50
+                      borderRadius: 50,
+                      border: '1px solid #ddd'
                     }}
                   >
-                    Av. Romualdo Galvão, 138 A - Barro Vermelho - Natal/RN
+                    {' '}
+                    Criador
                   </li>
 
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
                     style={{
-                      borderRadius: 50
+                      borderRadius: 50,
+                      border: '1px solid #ddd'
                     }}
                   >
-                    Seg. à sex das 8h às 18 | Sáb. 8h às 12h
+                    {' '}
+                    Personalizar
+                  </li>
+                  <li
+                    className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
+                    style={{
+                      borderRadius: 50,
+                      border: '1px solid #ddd'
+                    }}
+                  >
+                    {' '}
+                    Ajustes
                   </li>
                 </ul>
               </nav>

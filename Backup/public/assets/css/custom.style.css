@@ -1,16 +1,4 @@
-@font-face {
-  font-family: 'goldplay-semiBold';
-  src: url('/assets/fonts/goldplay-semiBold.ttf');
-}
-
-@font-face {
-  font-family: 'goldplay-medium';
-  src: url('/assets/fonts/goldplay-medium.ttf');
-}
-
-* {
-  font-family: 'goldplay-medium', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 html {
   height: 100%;
@@ -19,9 +7,7 @@ html {
 h1,
 h2,
 h2 {
-  font-family: 'goldplay-semiBold', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 900;
-  color: var(--theme-font-title-gray) !important;
 }
 
 .active {
@@ -45,12 +31,6 @@ h2 {
 }
 
 .dropdown-menu-horizontal .item-dropdown {
-}
-
-/* Header */
-
-.header .ctx-header {
-  background: #e1e1e2;
 }
 
 /* Footer */
@@ -80,7 +60,7 @@ h2 {
 .footer .footer-nav .footer-menu-item a {
   font-weight: 300;
   font-size: 0.8rem;
-  color: #2e0e0c;
+  color: #000000;
 }
 /* Card product */
 .card-product-item-li {
@@ -148,7 +128,7 @@ h2 {
 }
 @media only screen and (min-width: 1280px) {
   .card-product-item-li {
-    width: 20%;
+    width: 16.66%;
   }
   .footer .footer-nav-col {
     width: 33%;
@@ -168,34 +148,26 @@ h2 {
   */
 
 :root {
-  --theme-primary-color: #aa1937;
-  --theme-secundary-color: #f4a2a0;
-
-  --theme-dark-background: #25060e;
-  --theme-light-background: #fff3f0;
-
+  --theme-primary-color: #f4063f;
+  --theme-secundary-color: #ff7a0d;
+  --theme-dark-background: rgb(1, 43, 35);
+  --theme-light-background: #fff4f4;
   --theme-white-background: #ffffff;
   --theme-grey-background: #f3efef;
-
   --theme-shadow: 0 1px 4px 0 rgb(0, 0, 0, 0.1);
   --theme-border: 1.4px solid #f3efef;
-
-  --theme-font-title-red: #a90023;
-  --theme-font-title-gray: #220e12;
+  --theme-font-title: #000000;
   --theme-font-link: #f4063f;
   --theme-font-link-hover: rgb(204 53 53);
   --theme-font-text: #000000;
-
   --input-focus: #f6f6f8;
   --button-focus: #f6f6f8;
-
-  --color-rose: #aa1937;
   --color-red: #f4063f;
   --color-blue: #2030de;
   --color-green: #37dd62;
   --color-yellow: #ffd110;
   --color-black: #000000;
   --color-orange: #ff7a0d;
-  --color-gray: #545b61;
+  --color-gray: #f6f6f8;
   --color-white: #ffffff;
 }

@@ -12,8 +12,7 @@ const DropdownItem = ({ title, row }: any) => {
           className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
           style={{
             borderRadius: 50,
-            border: '1px solid #ddd',
-            background: '#ffffff'
+            border: '1px solid #ddd'
           }}
         >
           Object mockups
@@ -23,14 +22,12 @@ const DropdownItem = ({ title, row }: any) => {
             size="18px"
           />
         </li>
-        <ul style={down ? { display: 'block' } : { display: 'none' }}>
+        <ul
+          style={down ? { display: 'block' } : { display: 'none' }}
+        >
           <div
             style={{ position: 'relative' }}
-            className={
-              down
-                ? 'content-dropdown animations-scale-down'
-                : 'content-dropdown'
-            }
+            className={down ? 'content-dropdown animations-scale-down' : 'content-dropdown'}
           >
             <li
               className={
