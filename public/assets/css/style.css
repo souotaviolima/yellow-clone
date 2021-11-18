@@ -1124,11 +1124,13 @@ table {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
+  justify-content: space-around;
 }
 
 .card-secondary {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .card-primary .card-header {

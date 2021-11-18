@@ -13,23 +13,24 @@ const GridMenu = () => {
             borderRadius: 23
           }}
         >
-          <div className="card-header mg-6 mg-b-1">
-            <span
-              className="title-s-1"
-              style={{
-                color: 'var(--color-grey) !important',
-                fontWeight: 600
-              }}
-            >
-              Procedimentos
-            </span>
-          </div>
           <div className="card-content mg-l-6 mg-r-6">
             <div style={{ width: '100%' }}>
               <div className="mg-b-5">
+                <span
+                  className="title-s-1 mg-b-5"
+                  style={{
+                    color: 'var(--color-grey) !important',
+                    fontWeight: 400
+                  }}
+                >
+                  Procedimentos
+                </span>
                 <h2
                   className="title-s-2 mg-b-1"
-                  style={{ color: 'var(--color-white) !important' }}
+                  style={{
+                    color: 'var(--color-white) !important',
+                    fontWeight: 400
+                  }}
                 >
                   Conheça os procedimentos oferecido pela a clínica
                 </h2>
@@ -59,7 +60,7 @@ const GridMenu = () => {
                   className="title-s-1"
                   style={{
                     color: 'var(--color-grey) !important',
-                    fontWeight: 600
+                    fontWeight: 400
                   }}
                 >
                   Agendamento
@@ -76,7 +77,10 @@ const GridMenu = () => {
                   <div className="mg-b-5">
                     <h2
                       className="title-s-1 mg-b-1"
-                      style={{ color: 'var(--color-white) !important' }}
+                      style={{
+                        color: 'var(--color-white) !important',
+                        fontWeight: 400
+                      }}
                     >
                       Agende sua avaliação GRÁTIS de forma rápida e prática
                     </h2>
@@ -127,10 +131,10 @@ const GridMenu = () => {
                   className="title-s-1"
                   style={{
                     color: 'var(--color-white) !important',
-                    fontWeight: 600
+                    fontWeight: 400
                   }}
                 >
-                  Agendamento
+                  Promoções
                 </span>
               </div>
               <div className="card-content mg-l-6 mg-b-6 mg-r-5">
@@ -144,9 +148,12 @@ const GridMenu = () => {
                   <div className="mg-b-5">
                     <h2
                       className="title-s-1 mg-b-1"
-                      style={{ color: 'var(--color-white) !important' }}
+                      style={{
+                        color: 'var(--color-white) !important',
+                        fontWeight: 400
+                      }}
                     >
-                      Agende sua avaliação GRÁTIS de forma rápida e prática
+                      Os procedimentos queredinhos que estão em promoção
                     </h2>
                   </div>
                   <div className="mg-b-5 between-display">
@@ -175,7 +182,7 @@ const GridMenu = () => {
               style={{ display: 'flex', alignItems: 'flex-end' }}
             >
               <img
-                style={{ height: '100%' }}
+                style={{ height: '80%' }}
                 src="/assets/img/modelo_w_02.png"
               />
             </div>
@@ -195,10 +202,10 @@ const GridMenu = () => {
                   className="title-s-1"
                   style={{
                     color: 'var(--color-grey) !important',
-                    fontWeight: 600
+                    fontWeight: 400
                   }}
                 >
-                  Agendamento
+                  Sobre a AMO
                 </span>
               </div>
               <div className="card-content mg-l-6 mg-b-6 mg-r-5">
@@ -212,9 +219,12 @@ const GridMenu = () => {
                   <div className="mg-b-5">
                     <h2
                       className="title-s-1 mg-b-1"
-                      style={{ color: 'var(--color-white) !important' }}
+                      style={{
+                        color: 'var(--color-white) !important',
+                        fontWeight: 400
+                      }}
                     >
-                      Agende sua avaliação GRÁTIS de forma rápida e prática
+                      Saiba mais sobre a nossa história e onde vamos chegar
                     </h2>
                   </div>
                   <div className="mg-b-5 between-display">
@@ -263,10 +273,10 @@ const GridMenu = () => {
                   className="title-s-1"
                   style={{
                     color: 'var(--color-grey) !important',
-                    fontWeight: 600
+                    fontWeight: 400
                   }}
                 >
-                  Agendamento
+                  Localização
                 </span>
               </div>
               <div className="card-content mg-l-6 mg-b-6 mg-r-5">
@@ -280,9 +290,12 @@ const GridMenu = () => {
                   <div className="mg-b-5">
                     <h2
                       className="title-s-1 mg-b-1"
-                      style={{ color: 'var(--color-white) !important' }}
+                      style={{
+                        color: 'var(--color-white) !important',
+                        fontWeight: 400
+                      }}
                     >
-                      Agende sua avaliação GRÁTIS de forma rápida e prática
+                      Confira onde estamos localizados e como chegar
                     </h2>
                   </div>
                   <div className="mg-b-5 between-display">

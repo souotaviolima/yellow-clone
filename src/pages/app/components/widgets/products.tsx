@@ -102,7 +102,13 @@ export default function Index() {
         </div>
       </div>
       <div className="row">
-        <ul>
+        <ul
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center'
+          }}
+        >
           {services.map((service, key) => (
             <li key={key} className="card-product-item-li">
               <div
@@ -162,7 +168,6 @@ export default function Index() {
         </ul>
       </div>
       <div style={{ clear: 'both' }} />
-
     </div>
   )
 }

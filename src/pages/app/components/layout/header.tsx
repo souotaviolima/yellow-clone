@@ -56,19 +56,29 @@ const Header = () => {
               <nav>
                 <ul className="content-row">
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Início
+                    <a href="#" className="a-href-nav-header">
+                      Início
+                    </a>
                   </li>
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Procedimetos
+                    <a href="#" className="a-href-nav-header">
+                      Procedimetos
+                    </a>
                   </li>
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    A clíníca
+                    <a href="#" className="a-href-nav-header">
+                      A clíníca
+                    </a>
                   </li>
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Promoções
+                    <a href="#" className="a-href-nav-header">
+                      Promoções
+                    </a>
                   </li>
                   <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    Localização
+                    <a href="#" className="a-href-nav-header">
+                      Localização
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -140,7 +150,9 @@ const Header = () => {
                       borderRadius: 50
                     }}
                   >
-                    (84) 9.9619.1917
+                    <a href="#" className="a-href-nav-to-header">
+                      (84) 9.9619.1917
+                    </a>
                   </li>
                   <li
                     className="btn-s-2 pd-3 pd-l-5 pd-r-5 flex-display mg-1"
@@ -148,7 +160,9 @@ const Header = () => {
                       borderRadius: 50
                     }}
                   >
-                    Av. Romualdo Galvão, 138 A - Barro Vermelho - Natal/RN
+                    <a href="#" className="a-href-nav-to-header">
+                      Av. Romualdo Galvão, 138 A - Barro Vermelho - Natal/RN
+                    </a>
                   </li>
 
                   <li
@@ -157,7 +171,9 @@ const Header = () => {
                       borderRadius: 50
                     }}
                   >
-                    Seg. à sex das 8h às 18 | Sáb. 8h às 12h
+                    <a href="#" className="a-href-nav-to-header">
+                      Seg. à sex das 8h às 18 | Sáb. 8h às 12h
+                    </a>
                   </li>
                 </ul>
               </nav>
