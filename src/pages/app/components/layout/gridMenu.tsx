@@ -13,18 +13,20 @@ const GridMenu = () => {
             borderRadius: 23
           }}
         >
+          <div className="card-header mg-6 mg-b-1">
+            <span
+              className="title-s-1"
+              style={{
+                color: 'var(--color-grey) !important',
+                fontWeight: 400
+              }}
+            >
+              Procedimentos
+            </span>
+          </div>
           <div className="card-content mg-l-6 mg-r-6">
             <div style={{ width: '100%' }}>
               <div className="mg-b-5">
-                <span
-                  className="title-s-1 mg-b-5"
-                  style={{
-                    color: 'var(--color-grey) !important',
-                    fontWeight: 400
-                  }}
-                >
-                  Procedimentos
-                </span>
                 <h2
                   className="title-s-2 mg-b-1"
                   style={{
