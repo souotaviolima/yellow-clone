@@ -76,6 +76,7 @@ h2 {
 .footer .footer-nav .footer-menu-item {
 }
 .footer .footer-nav .footer-menu-item b {
+  font-weight: bold;
 }
 .footer .footer-nav .footer-menu-item a {
   font-weight: 300;
@@ -118,9 +119,8 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
-  .card-product-item-li .title-s-1 {
-    font-size: 2em !important;
-    line-height: 1.3;
+  .card-product-item-li .img {
+    height: 150px !important;
   }
 }
 
@@ -128,9 +128,6 @@ h2 {
 @media only screen and (min-width: 360px) {
   .card-product-item-li {
     width: 50%;
-  }
-  .card-product-item-li .img {
-    height: 250px !important;
   }
 }
 

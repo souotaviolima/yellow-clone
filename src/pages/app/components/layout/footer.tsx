@@ -2,14 +2,9 @@ import React, { useState } from 'react'
 
 import {
   FacebookSquare,
-  Pinterest,
-  Twitter,
-  Youtube,
   Instagram,
-  Behance
+  Whatsapp
 } from '@styled-icons/boxicons-logos'
-
-import { Vk } from '@styled-icons/icomoon'
 
 const Footer = () => {
   return (
@@ -23,26 +18,15 @@ const Footer = () => {
             {' '}
             <nav>
               <ul className="content-row pd-b-4 pd-t-4">
-                <li className="btn-s-2 pd-r-5">
-                  <FacebookSquare fill="#000000" size="22px" />
+                <li className="btn-s-2 pd-r-2">
+                  <Whatsapp fill="#575b61" size="35px" />
                 </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Youtube fill="#000000" size="22px" />
+                <li className="btn-s-2 pd-r-2">
+                  <FacebookSquare fill="#575b61" size="35px" />
                 </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Pinterest fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Twitter fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Instagram fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Behance fill="#000000" size="22px" />
-                </li>
-                <li className="btn-s-2 pd-r-5">
-                  <Vk fill="#000000" size="22px" />
+
+                <li className="btn-s-2 pd-r-2">
+                  <Instagram fill="#575b61" size="35px" />
                 </li>
               </ul>
             </nav>
@@ -57,33 +41,25 @@ const Footer = () => {
                     <b>Institucional</b>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Agendamento Online</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#">Onde Estamos</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
+                    <a href="#">Sobre a GiOlaser</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Markets</b>
+                    <a href="#">Nosso Grupo</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Seja um Franqueado</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contato</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
+                    <a href="#">Trabalhe Conosco</a>
                   </div>
                 </ul>
               </div>
@@ -93,33 +69,13 @@ const Footer = () => {
                     <b>Tratamentos</b>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Depilação a Laser</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#">Tratamentos Faciais</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Markets</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
+                    <a href="#">Tratamentos Corporais</a>
                   </div>
                 </ul>
               </div>
@@ -129,33 +85,12 @@ const Footer = () => {
                     <b>Contatos</b>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
+                    <a href="#">(84) 9.9619.1917</a>
                   </div>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
-                  </div>
-                </ul>
-                <ul>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <b>Markets</b>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Terms & Conditions</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Licenses</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Copyright Notice & Disclaimer</a>
+                    <a href="#">
+                      Av. Romualdo Galvão, 138 A Barro vermelho - Natal/RN
+                    </a>
                   </div>
                 </ul>
               </div>
