@@ -93,7 +93,7 @@ export default function Index() {
             <img style={{ width: 50 }} src="/assets/img/amo-icon.jpg" />
           </div>
           <div className="content-header">
-            <h2 className="title-s-2" style={{ lineHeight: 1 }}>
+            <h2 className="title-s-2" style={{ lineHeight: 1, fontWeight: 400 }}>
               Procedimentos e
               <br />
               Protocolos especiais{' '}
@@ -143,7 +143,7 @@ export default function Index() {
                   >
                     <h2
                       className="title-s-1"
-                      style={{ color: 'var(--color-black)' }}
+                      style={{ color: 'var(--color-black)', fontWeight: 600 }}
                     >
                       {service.title}
                     </h2>
@@ -156,7 +156,11 @@ export default function Index() {
                   >
                     <small
                       className="small-s-1 mg-b-1"
-                      style={{ color: '#707070', fontSize: '0.8rem' }}
+                      style={{
+                        color: '#707070',
+                        fontSize: '0.8rem',
+                        fontWeight: 400
+                      }}
                     >
                       {service.small}
                     </small>
