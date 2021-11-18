@@ -15,7 +15,13 @@ const Footer = () => {
       <div className="footer-container container-xxl mg-t-5 mg-b-5 pd-t-5 pd-b-5">
         <div className="column-6 col-12">
           <div className="content">
-            {' '}
+            <div className="logo-header">
+              <img
+                src="/assets/img/amo-logo-sm.png"
+                alt="Picture of the author"
+                height="40px"
+              />
+            </div>
             <nav>
               <ul className="content-row pd-b-4 pd-t-4">
                 <li className="btn-s-2 pd-r-2">
@@ -24,7 +30,6 @@ const Footer = () => {
                 <li className="btn-s-2 pd-r-2">
                   <FacebookSquare fill="#575b61" size="35px" />
                 </li>
-
                 <li className="btn-s-2 pd-r-2">
                   <Instagram fill="#575b61" size="35px" />
                 </li>
