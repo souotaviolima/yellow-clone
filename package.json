@@ -30,6 +30,7 @@
     "nookies": "^2.5.2",
     "prettier": "^2.3.2",
     "react": "17.0.2",
+    "react-collapsible": "^2.8.4",
     "react-color": "^2.19.3",
     "react-countup": "^5.2.0",
     "react-device-detect": "^1.17.0",
