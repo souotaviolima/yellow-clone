@@ -150,6 +150,11 @@ const Header = () => {
                       borderRadius: 50
                     }}
                   >
+                    <img
+                      className="mg-r-3"
+                      src="/assets/icons/whatsapp.svg"
+                      style={{ height: 25 }}
+                    />
                     <a href="#" className="a-href-nav-to-header">
                       (84) 9.9619.1917
                     </a>
@@ -160,6 +165,11 @@ const Header = () => {
                       borderRadius: 50
                     }}
                   >
+                    <img
+                      className="mg-r-3"
+                      src="/assets/icons/local.svg"
+                      style={{ height: 25 }}
+                    />
                     <a href="#" className="a-href-nav-to-header">
                       Av. Romualdo Galvão, 138 A - Barro Vermelho - Natal/RN
                     </a>
@@ -171,6 +181,11 @@ const Header = () => {
                       borderRadius: 50
                     }}
                   >
+                    <img
+                      className="mg-r-3"
+                      src="/assets/icons/horario.svg"
+                      style={{ height: 25 }}
+                    />
                     <a href="#" className="a-href-nav-to-header">
                       Seg. à sex das 8h às 18 | Sáb. 8h às 12h
                     </a>
