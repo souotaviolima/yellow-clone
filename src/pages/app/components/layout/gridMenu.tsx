@@ -113,6 +113,7 @@ const GridMenu = () => {
               style={{ display: 'flex', alignItems: 'flex-end' }}
             >
               <img
+                className="hidden-1"
                 style={{ height: 120, margin: 10 }}
                 src="/assets/img/calendar_i.png"
               />
@@ -180,10 +181,11 @@ const GridMenu = () => {
               </div>
             </div>
             <div
-              className="card-image hidden-1"
+              className="card-image"
               style={{ display: 'flex', alignItems: 'flex-end' }}
             >
               <img
+                className="card-image hidden-1"
                 style={{ height: '80%' }}
                 src="/assets/img/modelo_w_02.png"
               />
@@ -251,10 +253,11 @@ const GridMenu = () => {
               </div>
             </div>
             <div
-              className="card-image hidden-1"
+              className="card-image"
               style={{ display: 'flex', alignItems: 'flex-end' }}
             >
               <img
+                className="card-image hidden-1"
                 style={{ height: '100%' }}
                 src="/assets/img/modelo_w_03.png"
               />
@@ -322,10 +325,11 @@ const GridMenu = () => {
               </div>
             </div>
             <div
-              className="card-image hidden-1"
+              className="card-image"
               style={{ display: 'flex', alignItems: 'flex-end' }}
             >
               <img
+                className="card-image hidden-1"
                 style={{ height: 120, margin: 10 }}
                 src="/assets/img/calendar_i.png"
               />
