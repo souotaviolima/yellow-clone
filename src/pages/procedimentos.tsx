@@ -48,7 +48,10 @@ export default function Index() {
         </div>
       </div>
       <div className="container-xxl">
-        <div className={'content' + ' ' + StylesCustom.content_columns} style={styles.columnsContent}>
+        <div
+          className={'content' + ' ' + StylesCustom.content_columns}
+          style={styles.columnsContent}
+        >
           <div className="column-6 col-12">
             <div className="content pd-t-6 pd-b-6">
               <div className="page-resume-text mg-t-6">
@@ -99,17 +102,21 @@ export default function Index() {
                 />
               </div>
 
-              <li
-                className="btn-s-2 pd-4 pd-l-5 pd-r-5 flex-display mg-1"
-                style={{
-                  borderRadius: 50,
-                  backgroundColor: 'var(--theme-primary-color)'
-                }}
-              >
-                <strong style={{ fontWeight: 900, color: '#ffffff' }}>
-                  Verresulta dos antes e depois
-                </strong>
-              </li>
+              <div className="mg-t-3">
+                <a
+                  className="btn-s-2 pd-4 pd-l-6 pd-r-6 flex-display mg-1"
+                  style={{
+                    borderRadius: 50,
+                    backgroundColor: 'var(--theme-primary-color)',
+                    display: 'table',
+                    margin: 'auto'
+                  }}
+                >
+                  <strong style={{ fontWeight: 900, color: '#ffffff' }}>
+                    Verresulta dos antes e depois
+                  </strong>
+                </a>
+              </div>
             </div>
           </div>
         </div>
