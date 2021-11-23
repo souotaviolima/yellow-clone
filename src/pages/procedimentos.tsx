@@ -101,7 +101,6 @@ export default function Index() {
                   }}
                 />
               </div>
-
               <div className="mg-t-3">
                 <a
                   className="btn-s-2 pd-4 pd-l-6 pd-r-6 flex-display mg-1"
@@ -299,8 +298,110 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="container-xxl">
+      <div className="container-xxl before after">
         <Gallery />
+      </div>
+      <div
+        className="from-container mg-b-7"
+        style={{
+          backgroundImage: 'linear-gradient(to right, #6a002e, #6f0021)'
+        }}
+      >
+        <div className="container-lg">
+          <div className="content">
+            <div className="column-5 col-12 ">
+              <div className="header-form mg-b-5 before">
+                <h1
+                  className="title-s-1"
+                  style={{
+                    fontSize: '2pc',
+                    fontWeight: 400,
+                    color: 'var(--color-white) !important'
+                  }}
+                >
+                  Agendamento Online
+                </h1>
+                <small
+                  className="small-s-1"
+                  style={{
+                    fontSize: '1pc',
+                    fontWeight: 300,
+                    color: 'var(--color-white) !important'
+                  }}
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been
+                </small>
+              </div>
+              <form style={styles.form} className="after">
+                <div className="form-content" style={styles.formContent}>
+                  <div className="input-group mg-b-3" style={styles.inputGroup}>
+                    <div
+                      className="input-group-prepend"
+                      style={styles.groupPrepend}
+                    >
+                      <span className="input-group-text" id="basic-addon1">
+                        ico
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Nome*"
+                      style={styles.inputControl}
+                    />
+                  </div>
+                  <div className="input-group mg-b-3" style={styles.inputGroup}>
+                    <div
+                      className="input-group-prepend"
+                      style={styles.groupPrepend}
+                    >
+                      <span className="input-group-text" id="basic-addon1">
+                        ico
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Nome*"
+                      style={styles.inputControl}
+                    />
+                  </div>
+                  <div className="input-group mg-b-5" style={styles.inputGroup}>
+                    <div
+                      className="input-group-prepend"
+                      style={styles.groupPrepend}
+                    >
+                      <span className="input-group-text" id="basic-addon1">
+                        ico
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Nome*"
+                      style={styles.inputControl}
+                    />
+                  </div>
+                  <button
+                    className="btn-s-2 pd-2 pd-l-5 pd-r-5 flex-display"
+                    style={{
+                      borderRadius: 50,
+                      backgroundColor: '#8f8f8f',
+                      display: 'table',
+                      margin: 'auto'
+                    }}
+                  >
+                    <strong style={{ fontWeight: 700, color: '#ffffff' }}>
+                      AGENDAR
+                    </strong>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div style={{ clear: 'both' }} />
       </div>
     </Wrap>
   )
@@ -308,5 +409,36 @@ export default function Index() {
 
 const styles: any = {
   header: { backgroundColor: 'var(--theme-primary-color)' },
-  columnsContent: { display: 'flex', justifyContent: 'space-evenly' }
+  columnsContent: { display: 'flex', justifyContent: 'space-evenly' },
+  form: { width: '100%' },
+  formContent: {
+    display: 'block',
+    padding: 20,
+    backgroundColor: '#ffffff',
+    paddingBottom: 100,
+    borderRadius: 15,
+    border: '1px solid #e3075e'
+  },
+  inputGroup: {
+    display: 'flex',
+    width: '100%',
+    backgroundColor: '#ffffff',
+    border: '1px solid #cccccc',
+    borderRadius: 3
+  },
+  groupPrepend: {
+    borderRight: '1px solid #cccccc',
+    padding: '10px 15px',
+    color: '#2e2e2e'
+  },
+  inputControl: {
+    width: '100%',
+    padding: 10,
+    color: '#2e2e2e'
+  },
+  btnForm: {
+    width: '100%',
+    padding: 10,
+    color: '#ffffff'
+  }
 }

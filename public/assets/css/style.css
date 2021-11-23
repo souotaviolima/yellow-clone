@@ -77,7 +77,7 @@ td {
   text-decoration: none;
   list-style: none;
   font-weight: 500;
-} 
+}
 
 body {
   font-family: 'Ubuntu-Regular', sans-serif;
@@ -258,7 +258,6 @@ table {
   flex-wrap: wrap;
   transition: 0.3s;
 }
-
 
 /*
   * @Grid displays 
@@ -1504,4 +1503,12 @@ table {
   .column-12 {
     width: 100%;
   }
+}
+
+.after::after,
+.before::before {
+  content: '';
+  display: block;
+  height: 60px;
+  clear: both;
 }
