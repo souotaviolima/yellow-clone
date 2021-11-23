@@ -113,7 +113,7 @@ export default function Index() {
                   }}
                 >
                   <strong style={{ fontWeight: 900, color: '#ffffff' }}>
-                    Verresulta dos antes e depois
+                    Ver resulta dos antes e depois
                   </strong>
                 </a>
               </div>
