@@ -175,7 +175,7 @@ table {
 .container-sm,
 .container-xl,
 .container-xxl {
-  width: 100%;
+  width: 90%;
   padding-right: 0, 0.75rem;
   padding-left: 0, 0.75rem;
   margin-right: auto;

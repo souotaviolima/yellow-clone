@@ -4,9 +4,7 @@ import Collapsible from 'react-collapsible'
 import Wrap from './app/components/layout/wrap'
 import Gallery from './app/components/widgets/gallery'
 
-const styles: any = {
-  header: { backgroundColor: 'var(--theme-primary-color)' }
-}
+import StylesCustom from '../style/custom.module.css'
 
 export default function Index() {
   return (
@@ -50,10 +48,7 @@ export default function Index() {
         </div>
       </div>
       <div className="container-xxl">
-        <div
-          className="content"
-          style={{ display: 'flex', justifyContent: 'space-around' }}
-        >
+        <div className={'content' + ' ' + StylesCustom.content_columns} style={styles.columnsContent}>
           <div className="column-6 col-12">
             <div className="content pd-t-6 pd-b-6">
               <div className="page-resume-text mg-t-6">
@@ -81,7 +76,7 @@ export default function Index() {
           </div>
           <div className="column-4 col-12">
             <div
-              className="content"
+              className={'content' + ' ' + StylesCustom.content_procedimentos}
               style={{
                 display: 'flex',
                 width: '100%',
@@ -304,4 +299,7 @@ export default function Index() {
   )
 }
 
-
+const styles: any = {
+  header: { backgroundColor: 'var(--theme-primary-color)' },
+  columnsContent: { display: 'flex', justifyContent: 'space-evenly' }
+}
