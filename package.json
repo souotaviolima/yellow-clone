@@ -1,6 +1,7 @@
 {
-  "name": "miv-theme",
-  "description": "",
+  "name": "miv-theme-amo-2021",
+  "description": "Este é um tema feito pela MIV Comunicação",
+  "author": "JseOtavio",
   "version": "2.0.3",
   "private": true,
   "scripts": {
