@@ -3,50 +3,17 @@ import Collapsible from 'react-collapsible'
 
 import Wrap from './app/components/layout/wrap'
 import Gallery from './app/components/widgets/gallery'
+import HeaderPage from './app/components/layout/headerPage'
 
 import StylesCustom from '../style/custom.module.css'
 
 export default function Index() {
   return (
     <Wrap>
-      <div className="header-page" style={styles.header}>
-        <div className="container-xxl">
-          <div
-            className="content"
-            style={{ display: 'flex', flexWrap: 'wrap' }}
-          >
-            <div className="column-6 col-12">
-              <div className="content pd-t-6 pd-b-6 mg-t-6">
-                <div className="page-resume-title">
-                  <h1
-                    className="title-s-1"
-                    style={{
-                      fontSize: '2pc',
-                      fontWeight: 600,
-                      color: 'var(--color-white) !important'
-                    }}
-                  >
-                    Carboxiterapia
-                  </h1>
-                </div>
-                <div className="page-resume-span mg-t-2">
-                  <span
-                    className="title-s-1 mg-t-5"
-                    style={{
-                      color: 'var(--color-white) !important',
-                      fontWeight: 500
-                    }}
-                  >
-                    Conheça os procedimentos
-                    <br />
-                    oferecidopelaaclínic
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeaderPage
+        title="Carboxiterapia"
+        small="Conheça os procedimentos oferecidos pelaaclínica"
+      />
       <div className="container-xxl">
         <div
           className={'content' + ' ' + StylesCustom.content_columns}
