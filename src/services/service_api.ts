@@ -1,12 +1,12 @@
 import axios from 'axios'
 function getAPIClient() {
 
-  // MUDE PARA HAJA NECESSIDADE
+  // MUDE CASO HAJA NECESSIDADE
 
   const api = axios.create({
     baseURL:
       process.env.SERVER === 'start'
-        ? 'https://www.alsol.com.br/api/v1/'
+        ? 'https://yellow-nextjs.herokuapp.com/api/v1/'
         : 'http://localhost:3000/api/v1/'
   })
 
