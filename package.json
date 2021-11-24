@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "set SERVER=true && next start",
+    "start": "set SERVER=production && next start",
     "lint": "next lint"
   },
   "repository": {
