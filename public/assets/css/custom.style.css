@@ -189,6 +189,11 @@ h2 {
   }
 }
 
+.header-page-title,
+.header-page-small {
+  color: #ffffff !important;
+}
+
 /*
   * @Roots 
   */

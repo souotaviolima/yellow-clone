@@ -330,7 +330,7 @@ export default function Index() {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Nome*"
+                      placeholder="E-mail*"
                       style={styles.inputControl}
                     />
                   </div>
@@ -346,7 +346,7 @@ export default function Index() {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Nome*"
+                      placeholder="Celular*"
                       style={styles.inputControl}
                     />
                   </div>

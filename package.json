@@ -5,9 +5,9 @@
   "version": "2.0.3",
   "private": true,
   "scripts": {
-    "dev": "set SERVER=dev && next dev",
-    "build": "set SERVER=build && next build",
-    "start": "set SERVER=start && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "set SERVER=true && next start",
     "lint": "next lint"
   },
   "repository": {
@@ -20,6 +20,7 @@
     "cors": "^2.8.5",
     "countup.js": "^2.0.8",
     "date-fns": "^2.23.0",
+    "dotenv": "^10.0.0",
     "filesize": "^8.0.0",
     "handlebars": "^4.7.7",
     "js-cookie": "^3.0.0",
