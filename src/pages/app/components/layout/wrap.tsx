@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from './header'
+import Header from '../widgets/header'
 import Footer from './footer'
 
 const Wrap = ({ children }) => {

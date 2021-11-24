@@ -1,16 +1,34 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Sticky from 'react-stickynode'
 
-import { GridThreeUp } from '@styled-icons/open-iconic'
-import { Cart, Search } from '@styled-icons/boxicons-regular'
+import api from '@src/services/service_api'
+import ActiveLink from '@src/utils/activeLink'
 
-import DropDownItem from './dropdownItem'
+type TMenu = [
+  {
+    name: string
+    icon: string
+    slug: string
+    options: any
+  }
+]
 
 const Header = () => {
   const [headerFixed, setHeaderFixed] = useState(false)
+  const [getHeader, setHeader] = useState<TMenu>()
+
   const handleStateChange = (status: any) => {
     setHeaderFixed(status.status === Sticky.STATUS_FIXED ? true : false)
   }
+
+  async function header() {
+    const resMenu = await api.get('/get/widget/header')
+    setHeader(resMenu.data.items)
+  }
+
+  useEffect(() => {
+    header()
+  }, [])
 
   return (
     <React.Fragment>
@@ -55,31 +73,17 @@ const Header = () => {
             <div className="content flex-display hidden-1">
               <nav>
                 <ul className="content-row">
-                  <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    <a href="#" className="a-href-nav-header">
-                      Início
-                    </a>
-                  </li>
-                  <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    <a href="#" className="a-href-nav-header">
-                      Procedimetos
-                    </a>
-                  </li>
-                  <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    <a href="#" className="a-href-nav-header">
-                      A clíníca
-                    </a>
-                  </li>
-                  <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    <a href="#" className="a-href-nav-header">
-                      Promoções
-                    </a>
-                  </li>
-                  <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
-                    <a href="#" className="a-href-nav-header">
-                      Localização
-                    </a>
-                  </li>
+                  {getHeader &&
+                    getHeader.map((menu: any, key: number) => (
+                      <li className="btn-s-2 pd-7 pd-l-3 pd-r-3 flex-display">
+                        <ActiveLink
+                          activeClassName="a-href-nav-header-active"
+                          href={menu.slug}
+                        >
+                          <a className="a-href-nav-header">{menu.name}</a>
+                        </ActiveLink>
+                      </li>
+                    ))}
                 </ul>
               </nav>
             </div>
@@ -107,39 +111,6 @@ const Header = () => {
           className="bg-white border-c-2 transition-s-8"
           style={headerFixed ? HeaderAnimation : { top: 0 }}
         >
-          <div className="container-xxl">
-            <form
-              className="form flex-display  between-display"
-              style={{ display: 'none' }}
-            >
-              <div className="form-content mg-t-5" style={{ width: '100%' }}>
-                <input
-                  type="text"
-                  name="password"
-                  className="input input-primary pd-8"
-                  placeholder="Busca"
-                  style={{
-                    backgroundColor: 'var(--color-gray)',
-                    border: '1px solid #ddd'
-                  }}
-                />
-              </div>
-              <div className="form-content hidden-1 mg-t-5 mg-l-4">
-                <button
-                  type="submit"
-                  className="btn btn-primary pd-l-5 pd-r-5"
-                  style={{
-                    backgroundColor: 'var(--color-black)',
-                    borderRadius: 30,
-                    minWidth: '12rem',
-                    background: '#ffffff'
-                  }}
-                >
-                  Search now
-                </button>
-              </div>
-            </form>
-          </div>
           <div className="ctx-header border-b-solid border-s-1 border-c-2 pd-t-1 pd-b-1 hidden-1">
             <div className="container-xxl">
               <nav className="hidden-1">
