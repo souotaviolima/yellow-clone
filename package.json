@@ -4,9 +4,9 @@
   "version": "2.0.3",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "set SERVER=dev && next dev",
+    "build": "set SERVER=build && next build",
+    "start": "set SERVER=start && next start",
     "lint": "next lint"
   },
   "repository": {
