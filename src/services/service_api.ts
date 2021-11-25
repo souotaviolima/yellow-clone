@@ -5,7 +5,7 @@ function getAPIClient() {
   const api = axios.create({
     baseURL:
       process.env.NODE_ENV === 'production'
-        ? 'https://yellow-nextjs.herokuapp.com/api/v1/'
+        ? 'https://amo-nextjs.herokuapp.com/api/v1/'
         : 'http://localhost:3000/api/v1/'
   })
 
