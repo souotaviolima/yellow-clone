@@ -194,6 +194,18 @@ h2 {
   color: #ffffff !important;
 }
 
+.content-map {
+  display: block;
+  width: 100%;
+}
+.content-map iframe {
+  margin-bottom: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  border: none;
+}
+
 /*
   * @Roots 
   */
