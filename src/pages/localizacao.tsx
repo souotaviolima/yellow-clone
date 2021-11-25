@@ -20,7 +20,7 @@ export default function Index() {
           <div className="column-12 col-12">
             <div className="content-map pd-t-6 pd-b-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15875.570091392434!2d-35.2065571!3d-5.8707296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f7e041e3c553b0e!2sWOW%20Telecom!5e0!3m2!1spt-BR!2sbr!4v1588220354133!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.3845918541447!2d-35.20657448523288!3d-5.801234295796206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3000357211167%3A0x4486822657b73d4f!2sAv.%20Romualdo%20Galv%C3%A3o%2C%20138a%20-%20Barro%20Vermelho%2C%20Natal%20-%20RN%2C%2059022-100!5e0!3m2!1spt-BR!2sbr!4v1637865757480!5m2!1spt-BR!2sbr"
                 width="600"
                 height="450"
                 style={{ border: 0 }}
