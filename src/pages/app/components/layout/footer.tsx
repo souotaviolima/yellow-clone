@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import {
   FacebookSquare,
@@ -6,7 +6,30 @@ import {
   Whatsapp
 } from '@styled-icons/boxicons-logos'
 
+import api from '@src/services/service_api'
+
+type TMenu = [
+  {
+    group: any
+    name: string
+    icon: string
+    slug: string
+    options: any
+  }
+]
+
 const Footer = () => {
+  const [getFooter, setFooter] = useState<TMenu>()
+
+  async function header() {
+    const resMenu = await api.get('/get/widget/footer')
+    setFooter(resMenu.data.items)
+  }
+
+  useEffect(() => {
+    header()
+  }, [])
+
   return (
     <footer
       className="footer"
@@ -45,27 +68,18 @@ const Footer = () => {
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
                     <b>Institucional</b>
                   </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Agendamento Online</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Onde Estamos</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Sobre a GiOlaser</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Nosso Grupo</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Seja um Franqueado</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Contato</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Trabalhe Conosco</a>
-                  </div>
+                  {getFooter &&
+                    getFooter.map(
+                      (menu: any, key: number) =>
+                        menu.group === 'institucional' && (
+                          <div
+                            key={key}
+                            className="footer-menu-item pd-3 pd-l-5 pd-r-5"
+                          >
+                            <a href={menu.slug}>{menu.name}</a>
+                          </div>
+                        )
+                    )}
                 </ul>
               </div>
               <div className="footer-nav-col">
@@ -73,30 +87,38 @@ const Footer = () => {
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
                     <b>Tratamentos</b>
                   </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Depilação a Laser</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Tratamentos Faciais</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">Tratamentos Corporais</a>
-                  </div>
+                  {getFooter &&
+                    getFooter.map(
+                      (menu: any, key: number) =>
+                        menu.group === 'tratamentos' && (
+                          <div
+                            key={key}
+                            className="footer-menu-item pd-3 pd-l-5 pd-r-5"
+                          >
+                            <a href={menu.slug}>{menu.name}</a>
+                          </div>
+                        )
+                    )}
                 </ul>
               </div>
+
               <div className="footer-nav-col">
                 <ul>
                   <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
                     <b>Contatos</b>
                   </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">(84) 9.9619.1917</a>
-                  </div>
-                  <div className="footer-menu-item pd-3 pd-l-5 pd-r-5">
-                    <a href="#">
-                      Av. Romualdo Galvão, 138 A Barro vermelho - Natal/RN
-                    </a>
-                  </div>
+                  {getFooter &&
+                    getFooter.map(
+                      (menu: any, key: number) =>
+                        menu.group === 'contatos' && (
+                          <div
+                            key={key}
+                            className="footer-menu-item pd-3 pd-l-5 pd-r-5"
+                          >
+                            <a href={menu.slug}>{menu.name}</a>
+                          </div>
+                        )
+                    )}
                 </ul>
               </div>
             </nav>

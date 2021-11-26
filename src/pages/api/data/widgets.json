@@ -28,5 +28,82 @@
         "slug": "/localizacao"
       }
     ]
+  },
+  {
+    "name": "footer",
+    "items": [
+      {
+        "group": "institucional",
+        "name": "Agendamento Online",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "institucional",
+        "name": "Onde Estamos",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "institucional",
+        "name": "Sobre a GIOlaser",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "institucional",
+        "name": "Nosso Grupo",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "institucional",
+        "name": "Seja um franqueado",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "institucional",
+        "name": "Contato",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "institucional",
+        "name": "Trabalhe Conosco",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "tratamentos",
+        "name": "Depilação a Laser",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "tratamentos",
+        "name": "Tratamentos Faciais",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "tratamentos",
+        "name": "Tratamentos Corporais",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "contatos",
+        "name": "(84) 9.9619.1917",
+        "icon": false,
+        "slug": "/localizacao"
+      },
+      {
+        "group": "contatos",
+        "name": "Av. Romualdo Galvão, 138 A Barro vermelho - Natal/RN",
+        "icon": false,
+        "slug": "/localizacao"
+      }
+    ]
   }
 ]
