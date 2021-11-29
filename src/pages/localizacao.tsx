@@ -13,8 +13,8 @@ export default function Index() {
         small="Conheça os procedimentos oferecidos pelaaclínica"
       />
       <div className="container-xxl after">
-        <div className="column-7 col-12">
-          <div className="content-map pd-t-6 pd-b-6">
+        <div className="column-12 col-12 before">
+          <div className="content-map pd-t-6 pd-b-6 after ">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.3845918541447!2d-35.20657448523288!3d-5.801234295796206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3000357211167%3A0x4486822657b73d4f!2sAv.%20Romualdo%20Galv%C3%A3o%2C%20138a%20-%20Barro%20Vermelho%2C%20Natal%20-%20RN%2C%2059022-100!5e0!3m2!1spt-BR!2sbr!4v1637865757480!5m2!1spt-BR!2sbr"
               width="600"
@@ -24,11 +24,85 @@ export default function Index() {
             ></iframe>
           </div>
         </div>
-        <div className="column-4 col-12 ">
+        <div className="column-6 col-12 after">
           <div
-            className="header-form mg-b-5 before"
-            style={{ textAlign: 'center' }}
+            className="column-content"
+            style={{ display: 'flex', flexDirection: 'column' }}
           >
+            <div
+              className="rw mg-b-6"
+              style={{ display: 'flex', flexDirection: 'column' }}
+            >
+              <h1
+                className="title-s-1 mg-b-3"
+                style={{
+                  fontSize: '2pc',
+                  fontWeight: 400,
+                  color: 'var(--theme-primary-color) !important'
+                }}
+              >
+                Horário de atendimento
+              </h1>
+              <span
+                className="small-s-1 mg-b-2"
+                style={{
+                  fontSize: '1pc',
+                  fontWeight: 300,
+                  color: 'var(--color-grey) !important'
+                }}
+              >
+                Segunda à sexta-feira: 08h às 18h
+              </span>
+              <span
+                className="small-s-1"
+                style={{
+                  fontSize: '1pc',
+                  fontWeight: 300,
+                  color: 'var(--color-grey) !important'
+                }}
+              >
+                Sábado: 08h às 12h
+              </span>
+            </div>
+            <div
+              className="rw"
+              style={{ display: 'flex', flexDirection: 'column' }}
+            >
+              <h1
+                className="title-s-1 mg-b-3"
+                style={{
+                  fontSize: '2pc',
+                  fontWeight: 400,
+                  color: 'var(--theme-primary-color) !important'
+                }}
+              >
+                Localização - Escritório
+              </h1>
+              <span
+                className="small-s-1 mg-b-2"
+                style={{
+                  fontSize: '1pc',
+                  fontWeight: 300,
+                  color: 'var(--color-grey) !important'
+                }}
+              >
+                Segunda à sexta-feira: 08h às 18h
+              </span>
+              <span
+                className="small-s-1"
+                style={{
+                  fontSize: '1pc',
+                  fontWeight: 300,
+                  color: 'var(--color-grey) !important'
+                }}
+              >
+                Sábado: 08h às 12h
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="column-6 col-12 ">
+          <div className="header-form mg-b-5">
             <h1
               className="title-s-1"
               style={{
