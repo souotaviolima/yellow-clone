@@ -129,7 +129,7 @@ export default function Index() {
                   color: 'var(--theme-primary-color) !important'
                 }}
               >
-                Siga a WOW Telecom
+                Siga a Amo
               </h1>
               <ul style={{ display: 'flex' }}>
                 <li className="mg-1">
