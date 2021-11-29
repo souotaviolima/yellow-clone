@@ -7,9 +7,9 @@
       "@modules/*": ["./node_modules/*"],
       "@public/*": ["./public/*"],
       "@src/*": ["./src/*"],
-      "@account/*": ["./src/pages/account/*"],
-      "@api/*": ["./src/pages/api/*"],
-      "@app/*": ["./src/pages/app/*"]
+      "@account/*": ["src/pages/account/*"],
+      "@api/*": ["src/pages/api/*"],
+      "@app/*": ["src/app/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

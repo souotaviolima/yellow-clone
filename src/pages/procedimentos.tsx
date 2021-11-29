@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Collapsible from 'react-collapsible'
 
-import Wrap from './app/components/layout/wrap'
-import Gallery from './app/components/widgets/gallery'
-import HeaderPage from './app/components/layout/headerPage'
+import Wrap from '../components/layout/wrap'
+import Gallery from '../components/widgets/gallery'
+import HeaderPage from '../components/layout/headerPage'
 
 import StylesCustom from '../style/custom.module.css'
 

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-import Wrap from './app/components/layout/wrap'
-import GridMenu from './app/components/layout/gridMenu'
+import Wrap from '../components/layout/wrap'
+import GridMenu from '../components/layout/gridMenu'
 
-import Products from './app/components/widgets/products'
+import Products from '../components/widgets/products'
 
 export default function Index() {
   return (

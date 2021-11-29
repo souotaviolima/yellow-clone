@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Sticky from 'react-stickynode'
 
-import Modal from '../layout/modal'
+import Modal from '../layout/modal/scheduling'
 
 import api from '@src/services/service_api'
 import ActiveLink from '@src/utils/activeLink'
@@ -36,94 +36,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <Sticky onStateChange={handleStateChange} />
-      <Modal image="/assets/img/modelo_w_01.png" title="Agendamento On-line" close="Fechar" isOpen={isModal}>
-        <div className="card-content">
-          <form style={styles.form}>
-            <div className="form-content" style={styles.formContent}>
-              <div className="input-group mg-b-3" style={styles.inputGroup}>
-                <div
-                  className="input-group-prepend"
-                  style={styles.groupPrepend}
-                >
-                  <span className="input-group-text" id="basic-addon1">
-                    ico
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Nome*"
-                  style={styles.inputControl}
-                />
-              </div>
-              <div className="input-group mg-b-3" style={styles.inputGroup}>
-                <div
-                  className="input-group-prepend"
-                  style={styles.groupPrepend}
-                >
-                  <span className="input-group-text" id="basic-addon1">
-                    ico
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Telefone*"
-                  style={styles.inputControl}
-                />
-              </div>
-              <div className="input-group mg-b-3" style={styles.inputGroup}>
-                <div
-                  className="input-group-prepend"
-                  style={styles.groupPrepend}
-                >
-                  <span className="input-group-text" id="basic-addon1">
-                    ico
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="E-mail*"
-                  style={styles.inputControl}
-                />
-              </div>
-              <div className="input-group mg-b-3" style={styles.inputGroup}>
-                <div
-                  className="input-group-prepend"
-                  style={styles.groupPrepend}
-                >
-                  <span className="input-group-text" id="basic-addon1">
-                    ico
-                  </span>
-                </div>
-                <select
-                  className="form-control"
-                  placeholder="E-mail*"
-                  style={styles.inputControl}
-                >
-                  <option>opção 01</option>
-                </select>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div className="card-footer">
-          <button
-            className="btn-s-2 pd-2 pd-l-5 pd-r-5 flex-display"
-            style={{
-              borderRadius: 50,
-              backgroundColor: 'var(--theme-primary-color)',
-              display: 'table',
-              margin: 'auto'
-            }}
-          >
-            <strong style={{ fontWeight: 700, color: '#ffffff' }}>
-              AGENDAR
-            </strong>
-          </button>
-        </div>
-      </Modal>
+      <Modal isOpen={isModal} />
       <header
         className="header transition-s-1"
         style={
@@ -273,41 +186,6 @@ const HeaderAnimation: any = {
   zIndex: 9998,
   position: 'relative',
   top: -900
-}
-
-const styles: any = {
-  header: { backgroundColor: 'var(--theme-primary-color)' },
-  columnsContent: { display: 'flex', justifyContent: 'space-evenly' },
-  form: { width: '100%' },
-  formContent: {
-    display: 'block',
-  },
-  inputGroup: {
-    display: 'flex',
-    width: '100%',
-    backgroundColor: '#ffffff',
-    border: '1px solid #cccccc',
-    borderRadius: 3
-  },
-  groupPrepend: {
-    borderRight: '1px solid #cccccc',
-    padding: '10px 15px',
-    color: '#2e2e2e'
-  },
-  inputControl: {
-    width: '100%',
-    padding: 10,
-    color: '#2e2e2e'
-  },
-  btnForm: {
-    width: '100%',
-    padding: 10,
-    color: '#ffffff'
-  },
-  btnSocial: {
-    borderRadius: 50,
-    border: '1px solid #dddddd'
-  }
 }
 
 export default Header

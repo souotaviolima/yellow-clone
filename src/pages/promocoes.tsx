@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Wrap from './app/components/layout/wrap'
-import HeaderPage from './app/components/layout/headerPage'
+import Wrap from '../components/layout/wrap'
+import HeaderPage from '../components/layout/headerPage'
 
 const promotions: any = [
   { title: 'Dê adeus aos vasinhos', small: '', image: '/assets/img/vasos.jpg' },
