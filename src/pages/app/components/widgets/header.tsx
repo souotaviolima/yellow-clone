@@ -80,7 +80,7 @@ const Header = () => {
                           activeClassName="a-href-nav-header-active"
                           href={menu.slug}
                         >
-                          <a className="a-href-nav-header">{menu.name}</a>
+                          <span className="a-href-nav-header">{menu.name}</span>
                         </ActiveLink>
                       </li>
                     ))}
