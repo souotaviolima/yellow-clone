@@ -116,7 +116,7 @@ export default function Index() {
                   color: 'var(--color-grey) !important'
                 }}
               >
-                E-mail: contato@wowtelecom.com.br
+                E-mail: contato@amoestetica.com.br
               </span>
             </div>
 
