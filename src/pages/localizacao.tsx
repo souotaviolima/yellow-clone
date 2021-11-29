@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Wrap from './app/components/layout/wrap'
 import HeaderPage from './app/components/layout/headerPage'
 
-import StylesCustom from '../style/custom.module.css'
+import { Facebook, Instagram } from '@styled-icons/boxicons-logos'
 
 export default function Index() {
   return (
@@ -118,6 +118,31 @@ export default function Index() {
               >
                 E-mail: contato@wowtelecom.com.br
               </span>
+            </div>
+
+            <div className="rw mg-t-6">
+              <h1
+                className="title-s-1 mg-b-3"
+                style={{
+                  fontSize: '1.5pc',
+                  fontWeight: 400,
+                  color: 'var(--theme-primary-color) !important'
+                }}
+              >
+                Siga a WOW Telecom
+              </h1>
+              <ul style={{ display: 'flex' }}>
+                <li className="mg-1">
+                  <a href="#" className="btn pd-3" style={styles.btnSocial}>
+                    <Instagram fill="#f4a2a0" size="35" />
+                  </a>
+                </li>
+                <li className="mg-1">
+                  <a href="#" className="btn pd-3" style={styles.btnSocial}>
+                    <Facebook fill="#f4a2a0" size="35" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -272,5 +297,9 @@ const styles: any = {
     width: '100%',
     padding: 10,
     color: '#ffffff'
+  },
+  btnSocial: {
+    borderRadius: 50,
+    border: '1px solid #dddddd'
   }
 }
